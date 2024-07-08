@@ -14,6 +14,8 @@ import SlideTwo from "/src/assets/slide-2.png";
 import SlideThree from "/src/assets/slide-3.jpg";
 import SlideFour from "/src/assets/slide-4.jpg";
 import SlideFive from "/src/assets/slide-5.jpg";
+// image
+import NewCourse from "/src/assets/course.jpg";
 
 interface LinkType {
   title: string;
@@ -386,4 +388,52 @@ export const slides = [
     id: 5,
     img: SlideFive,
   },
+];
+// new events
+interface EventType {
+  title: string;
+  date: string;
+  month: string;
+  img: any;
+  description: string;
+  path: string;
+}
+export const events: EventType[] = [
+  {
+    title:
+      "វគ្គសិក្សាថ្មី! សាកលវិទ្យាល័យបៀលប្រាយ ផ្ដល់អាហារូបករណ៍សិក្សា ១០% សម្រាប់ បរិញ្ញាបត្ររង បរិញ្ញាប័ត្រ និង បរិញ្ញាបត្រជាន់ខ្ពស់",
+    date: "8",
+    month: "Feb",
+    img: NewCourse,
+    description: "សាកលវិទ្យាល័យបៀលប្រាយ ជាគ្រឹះស្ថានដ៏ធំជាងគេ ក្នុង...",
+    path: "/new-course",
+  },
+  {
+    title:
+      "វគ្គសិក្សាថ្មី! សាកលវិទ្យាល័យបៀលប្រាយ ផ្ដល់អាហារូបករណ៍សិក្សា ១០% សម្រាប់ បរិញ្ញាបត្ររង បរិញ្ញាប័ត្រ និង បរិញ្ញាបត្រជាន់ខ្ពស់",
+    date: "8",
+    month: "Feb",
+    img: NewCourse,
+    description: "សាកលវិទ្យាល័យបៀលប្រាយ ជាគ្រឹះស្ថានដ៏ធំជាងគេ ក្នុង...",
+    path: "/new-course",
+  },
+  {
+    title:
+      "វគ្គសិក្សាថ្មី! សាកលវិទ្យាល័យបៀលប្រាយ ផ្ដល់អាហារូបករណ៍សិក្សា ១០% សម្រាប់ បរិញ្ញាបត្ររង បរិញ្ញាប័ត្រ និង បរិញ្ញាបត្រជាន់ខ្ពស់",
+    date: "8",
+    month: "Feb",
+    img: NewCourse,
+    description: "សាកលវិទ្យាល័យបៀលប្រាយ ជាគ្រឹះស្ថានដ៏ធំជាងគេ ក្នុង...",
+    path: "/new-course",
+  },
+  {
+    title:
+      "វគ្គសិក្សាថ្មី! សាកលវិទ្យាល័យបៀលប្រាយ ផ្ដល់អាហារូបករណ៍សិក្សា ១០% សម្រាប់ បរិញ្ញាបត្ររង បរិញ្ញាប័ត្រ និង បរិញ្ញាបត្រជាន់ខ្ពស់",
+    date: "8",
+    month: "Feb",
+    img: NewCourse,
+    description: "សាកលវិទ្យាល័យបៀលប្រាយ ជាគ្រឹះស្ថានដ៏ធំជាងគេ ក្នុង...",
+    path: "/new-course",
+  },
+  
 ];

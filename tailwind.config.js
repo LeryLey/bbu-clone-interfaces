@@ -11,6 +11,7 @@ export default {
       whiteGray: "#f5f3ee",
       green: "#07BF51",
       transparent: "transparent",
+      blueBlack: "#202c45 ",
     },
     backgroundImage: {
       school: "url('/src/assets/school.jpg')",

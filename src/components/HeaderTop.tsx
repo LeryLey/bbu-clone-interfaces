@@ -11,7 +11,7 @@ const HeaderTop = () => {
           {headerLinks.map((link) => (
             <Link
               to={link.path}
-              className="border-r border-primary text-primary font-normal text-sm pr-3 pl-1"
+              className="border-r border-primary text-primary font-normal text-sm pr-3 pl-1 "
             >
               {link.title}
             </Link>
@@ -30,7 +30,7 @@ const HeaderTop = () => {
       </div>
       <div className="bg-school bg-cover w-full h-52 b ">
         <div className="w-full h-full flex items-center  bg-white/50">
-          <img src={Logo} alt="logo" className="w-96 h-24 translate-x-60" />
+          <img src={Logo} alt="logo" className="w-[500px] h-32 translate-x-60" />
         </div>
       </div>
     </header>
