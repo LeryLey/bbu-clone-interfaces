@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .dropdown {
+    @apply absolute grid grid-cols-4 left-0 top-full bg-white rounded-b-md shadow-xl  overflow-hidden h-0    duration-500 ;
+  }
+}
