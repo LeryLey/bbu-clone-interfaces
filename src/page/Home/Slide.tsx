@@ -15,7 +15,7 @@ const Slide = () => {
   };
 
   return (
-    <div>
+    <>
       <div className="relative w-full h-[500px] group ">
         {/* btn prev  */}
         <button
@@ -41,7 +41,7 @@ const Slide = () => {
           <GrFormNext />
         </button>
       </div>
-    </div>
+    </>
   );
 };
 
