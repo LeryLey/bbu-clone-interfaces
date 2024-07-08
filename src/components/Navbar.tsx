@@ -12,13 +12,13 @@ import { studentServices } from "../constants";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 const Navbar = () => {
-  const [search, setSearch] = useState(false);
+  const [search, setSearch] = useState<boolean>(false);
   const handleSearchToggle = () => {
     setSearch(!search);
   };
   return (
-    <nav className="bg-primary flex justify-center  w-full ">
-      <ul className="flex relative w-[80%]">
+    <nav className="bg-primary flex justify-center w-full ">
+      <ul className="flex relative w-[80%] z-10">
         <li className="cursor-pointer text-white flex items-center font-serif text-sm p-6 hover:bg-green duration-300">
           Home
         </li>
@@ -53,7 +53,7 @@ const Navbar = () => {
             About BBU
             <IoChevronDown className="text-base" />
           </a>
-          <ul className="absolute left-0 top-full bg-white rounded-b-md shadow-xl  overflow-hidden h-0 group-hover:h-[440px] w-72 duration-500">
+          <ul className="absolute left-0 top-full bg-white  shadow-xl  overflow-hidden h-0 group-hover:h-[440px] w-72 duration-500">
             {about.map((about) => {
               return (
                 <li className="cursor-pointer w-full hover:bg-green text-gray hover:text-white py-3 px-4 hover:pl-6 flex items-center duration-300">
@@ -74,7 +74,7 @@ const Navbar = () => {
             Academics
             <IoChevronDown className="text-base" />
           </a>
-          <ul className="absolute left-0 top-full bg-white rounded-b-md shadow-xl  overflow-hidden h-0 group-hover:h-[360px] w-80 duration-500">
+          <ul className="absolute left-0 top-full bg-white  shadow-xl  overflow-hidden h-0 group-hover:h-[360px] w-80 duration-500">
             {academics.map((academic) => {
               return (
                 <li className="cursor-pointer w-full hover:bg-green text-gray hover:text-white py-3 px-4 hover:pl-6 flex items-center duration-300">
@@ -95,7 +95,7 @@ const Navbar = () => {
             Admission
             <IoChevronDown className="text-base" />
           </a>
-          <ul className="absolute left-0 top-full bg-white rounded-b-md shadow-xl  overflow-hidden h-0 group-hover:h-[160px] w-60 duration-500">
+          <ul className="absolute left-0 top-full bg-white  shadow-xl  overflow-hidden h-0 group-hover:h-[160px] w-60 duration-500">
             {admissions.map((admission) => {
               return (
                 <li className="cursor-pointer w-full hover:bg-green text-gray hover:text-white py-3 px-4 hover:pl-6 flex items-center duration-300">
@@ -116,7 +116,7 @@ const Navbar = () => {
             Research & Publication
             <IoChevronDown className="text-base" />
           </a>
-          <ul className="absolute left-0 top-full bg-white rounded-b-md shadow-xl  overflow-hidden h-0 group-hover:h-[170px] w-96 duration-500">
+          <ul className="absolute left-0 top-full bg-white  shadow-xl  overflow-hidden h-0 group-hover:h-[170px] w-96 duration-500">
             {researchAndPublication.map((research) => {
               return (
                 <li className="cursor-pointer w-full hover:bg-green text-gray hover:text-white py-3 px-4 hover:pl-6 flex items-center duration-300">
@@ -137,7 +137,7 @@ const Navbar = () => {
             Student Services
             <IoChevronDown className="text-base" />
           </a>
-          <ul className="absolute left-0 top-full bg-white rounded-b-md shadow-xl  overflow-hidden h-0 group-hover:h-[360px] w-60 duration-500">
+          <ul className="absolute left-0 top-full bg-white  shadow-xl  overflow-hidden h-0 group-hover:h-[360px] w-60 duration-500">
             {studentServices.map((service) => {
               return (
                 <li className="cursor-pointer w-full hover:bg-green text-gray hover:text-white py-3 px-4 hover:pl-6 flex items-center duration-300">
@@ -165,12 +165,12 @@ const Navbar = () => {
         <div
           className={
             !search
-              ? "absolute top-0 bg-black/95  w-full h-0 left-0 flex items-center justify-center overflow-hidden duration-500 ease-out"
-              : "absolute top-0 bg-black/95  w-full h-full left-0 flex items-center justify-center overflow-hidden duration-500 ease-out"
+              ? "fixed top-0 bg-black/85  w-full h-0 left-0 flex items-center justify-center overflow-hidden z-10 duration-500 ease-out"
+              : "fixed top-0 bg-black/85  w-full h-full left-0 flex items-center justify-center overflow-hidden z-10 duration-500 ease-out"
           }
         >
           <button
-          onClick={handleSearchToggle}
+            onClick={handleSearchToggle}
             type="button"
             className="text-gray hover:text-white text-3xl absolute top-3 right-3 "
           >

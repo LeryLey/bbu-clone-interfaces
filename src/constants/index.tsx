@@ -8,6 +8,12 @@ import RTK from "/src/assets/campuse-rtk.png";
 import TK from "/src/assets/campuse-tk.png";
 import ST from "/src/assets/campuse-st.png";
 import TBK from "/src/assets/campuse-tbk.jpg";
+// slide
+import SlideOne from "/src/assets/slide-1.png";
+import SlideTwo from "/src/assets/slide-2.png";
+import SlideThree from "/src/assets/slide-3.jpg";
+import SlideFour from "/src/assets/slide-4.jpg";
+import SlideFive from "/src/assets/slide-5.jpg";
 
 interface LinkType {
   title: string;
@@ -356,5 +362,28 @@ export const studentServices = [
     path: "/library-catalog",
     icon: null,
     img: null,
+  },
+];
+// slide show
+export const slides = [
+  {
+    id: 1,
+    img: SlideOne,
+  },
+  {
+    id: 2,
+    img: SlideTwo,
+  },
+  {
+    id: 3,
+    img: SlideThree,
+  },
+  {
+    id: 4,
+    img: SlideFour,
+  },
+  {
+    id: 5,
+    img: SlideFive,
   },
 ];
