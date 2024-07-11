@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom";
 import { events } from "../../constants";
+// icons
+import { IoMdAdd, IoMdLink } from "react-icons/io";
 import { GrFormNext, GrFormPrevious } from "react-icons/gr";
 import { FaVideo } from "react-icons/fa";
 import { educations } from "../../constants";
@@ -12,6 +14,14 @@ import VicePresident from "/src/assets/vice-president.png";
 import AppStore from "/src/assets/app_ios.png";
 import PlayStore from "/src/assets/app-and.png";
 import Research from "/src/assets/research.jpg";
+import imgOne from "/src/assets/img1.jpg";
+import imgTwo from "/src/assets/img2.jpg";
+import imgThree from "/src/assets/img3.jpg";
+import imgFour from "/src/assets/img4.jpg";
+import imgFive from "/src/assets/img5.jpg";
+import imgSix from "/src/assets/img6.jpg";
+import imgSeven from "/src/assets/img7.jpg";
+import imgEight from "/src/assets/img8.jpg";
 
 const Events = () => {
   // auto slide
@@ -192,7 +202,7 @@ const Events = () => {
           </div>
         </div>
       </div>
-      <div className="bg-[#F7F8FA] w-full flex justify-center items-center py-5">
+      <div className="bg-[#F7F8FA] w-full flex flex-col justify-center items-center py-5">
         <div className="w-[80%] ">
           <div className="grid grid-cols-2 gap-10">
             <div className="h-full ">
@@ -203,6 +213,13 @@ const Events = () => {
                 <span className="w-20 h-px bg-black flex"></span>
               </div>
               <div>
+                <div className="w-full flex justify-end">
+                  <Link to={"/research-see-all"}>
+                    <button className="text-green text-lg hover:underline ">
+                      See All
+                    </button>
+                  </Link>
+                </div>
                 <div className="space-y-4 bg-white w-full">
                   <article className="flex gap-10 items-center">
                     <img src={Research} alt="research" className="w-40" />
@@ -233,8 +250,15 @@ const Events = () => {
                 </h2>
                 <span className="w-20 h-px bg-black flex"></span>
               </div>
+              <div className="w-full flex justify-end">
+                <Link to={"/video-see-all"}>
+                  <button className="text-green text-lg hover:underline ">
+                    See All
+                  </button>
+                </Link>
+              </div>
               <div className="w-full h-40 bg-white flex items-center justify-center ">
-                No Video
+                <p className="text-gray select-none">No Video</p>
               </div>
             </div>
           </div>
@@ -243,7 +267,7 @@ const Events = () => {
               return (
                 <div
                   key={index}
-                  className="group mb-4 bg-white hover:bg-blueBlack border border-green flex items-center flex-col justify-center py-4 px-8 duration-300"
+                  className="group mb-4 bg-white hover:bg-blueBlack border border-green hover:border-transparent flex items-center flex-col justify-center py-4 px-8 duration-300"
                 >
                   <span className="text-7xl text-gray group-hover:text-white duration-300">
                     {education.icon}
@@ -254,6 +278,156 @@ const Events = () => {
                 </div>
               );
             })}
+          </div>
+        </div>
+        <div className="w-full bg-white flex justify-center">
+          <div className="w-[80%] py-10">
+            <div className="space-y-1  flex flex-col items-center">
+              <h2 className="text-black text-xl font-serif font-bold uppercase">
+                Photo Gallery
+              </h2>
+              <span className="flex bg-green h-[3px] w-40"></span>
+              <span className="flex bg-green h-[2px] w-20"></span>
+            </div>
+            {/* gallery  */}
+            <div className="grid grid-cols-4 gap-1 w-full overflow-hidden pt-10 ">
+              <div className=" col-span-2 row-span-2 h-full relative group">
+                <img src={imgOne} className="h-full"/>
+                <div className="bg-blueBlack/90 absolute w-full h-full left-0 top-0 flex items-center justify-center gap-2 opacity-0 group-hover:opacity-100 duration-300">
+                  <Link
+                    to={"view"}
+                    className="text-white hover:text-green bg-green hover:bg-white rounded-full text-xl p-2 duration-300"
+                  >
+                    <IoMdAdd />
+                  </Link>
+                  <Link
+                    to={"view"}
+                    className="text-white hover:text-green bg-green hover:bg-white rounded-full text-xl p-2 duration-300"
+                  >
+                    <IoMdLink />
+                  </Link>
+                </div>
+              </div>
+              <div className="relative group">
+                <img src={imgTwo} />
+                <div className="bg-blueBlack/90 absolute w-full h-full left-0 top-0 flex items-center justify-center gap-2 opacity-0 group-hover:opacity-100 duration-300">
+                  <Link
+                    to={"view"}
+                    className="text-white hover:text-green bg-green hover:bg-white rounded-full text-xl p-2 duration-300"
+                  >
+                    <IoMdAdd />
+                  </Link>
+                  <Link
+                    to={"view"}
+                    className="text-white hover:text-green bg-green hover:bg-white rounded-full text-xl p-2 duration-300"
+                  >
+                    <IoMdLink />
+                  </Link>
+                </div>
+              </div>
+              <div className="relative group">
+                <img src={imgThree} />
+                <div className="bg-blueBlack/90 absolute w-full h-full left-0 top-0 flex items-center justify-center gap-2 opacity-0 group-hover:opacity-100 duration-300">
+                  <Link
+                    to={"view"}
+                    className="text-white hover:text-green bg-green hover:bg-white rounded-full text-xl p-2 duration-300"
+                  >
+                    <IoMdAdd />
+                  </Link>
+                  <Link
+                    to={"view"}
+                    className="text-white hover:text-green bg-green hover:bg-white rounded-full text-xl p-2 duration-300"
+                  >
+                    <IoMdLink />
+                  </Link>
+                </div>
+              </div>
+              <div className="relative group h-full w-full object-cover">
+                <img src={imgFour} />
+                <div className="bg-blueBlack/90 absolute w-full h-full left-0 top-0 flex items-center justify-center gap-2 opacity-0 group-hover:opacity-100 duration-300">
+                  <Link
+                    to={"view"}
+                    className="text-white hover:text-green bg-green hover:bg-white rounded-full text-xl p-2 duration-300"
+                  >
+                    <IoMdAdd />
+                  </Link>
+                  <Link
+                    to={"view"}
+                    className="text-white hover:text-green bg-green hover:bg-white rounded-full text-xl p-2 duration-300"
+                  >
+                    <IoMdLink />
+                  </Link>
+                </div>
+              </div>
+              <div className=" row-span-2 w-full relative group ">
+                <img src={imgEight} className="w-full h-full"/>
+                <div className="bg-blueBlack/90 absolute w-full h-full left-0 top-0 flex items-center justify-center gap-2 opacity-0 group-hover:opacity-100 duration-300">
+                  <Link
+                    to={"view"}
+                    className="text-white hover:text-green bg-green hover:bg-white rounded-full text-xl p-2 duration-300"
+                  >
+                    <IoMdAdd />
+                  </Link>
+                  <Link
+                    to={"view"}
+                    className="text-white hover:text-green bg-green hover:bg-white rounded-full text-xl p-2 duration-300"
+                  >
+                    <IoMdLink />
+                  </Link>
+                </div>
+              </div>
+              <div className="h-full relative group">
+                <img src={imgSix} className="h-full object-cover"/>
+                <div className="bg-blueBlack/90 absolute w-full h-full left-0 top-0 flex items-center justify-center gap-2 opacity-0 group-hover:opacity-100 duration-300">
+                  <Link
+                    to={"view"}
+                    className="text-white hover:text-green bg-green hover:bg-white rounded-full text-xl p-2 duration-300"
+                  >
+                    <IoMdAdd />
+                  </Link>
+                  <Link
+                    to={"view"}
+                    className="text-white hover:text-green bg-green hover:bg-white rounded-full text-xl p-2 duration-300"
+                  >
+                    <IoMdLink />
+                  </Link>
+                </div>
+              </div>
+              <div className="h-full  relative group">
+                <img src={imgFive} className="h-full object-cover " />
+                <div className="bg-blueBlack/90 absolute w-full h-full left-0 top-0 flex items-center justify-center gap-2 opacity-0 group-hover:opacity-100 duration-300">
+                  <Link
+                    to={"view"}
+                    className="text-white hover:text-green bg-green hover:bg-white rounded-full text-xl p-2 duration-300"
+                  >
+                    <IoMdAdd />
+                  </Link>
+                  <Link
+                    to={"view"}
+                    className="text-white hover:text-green bg-green hover:bg-white rounded-full text-xl p-2 duration-300"
+                  >
+                    <IoMdLink />
+                  </Link>
+                </div>
+              </div>
+              <div className="h-full relative group">
+                <img src={imgSeven} className="h-full object-cover"/>
+                <div className="bg-blueBlack/90 absolute w-full h-full left-0 top-0 flex items-center justify-center gap-2 opacity-0 group-hover:opacity-100 duration-300">
+                  <Link
+                    to={"view"}
+                    className="text-white hover:text-green bg-green hover:bg-white rounded-full text-xl p-2 duration-300"
+                  >
+                    <IoMdAdd />
+                  </Link>
+                  <Link
+                    to={"view"}
+                    className="text-white hover:text-green bg-green hover:bg-white rounded-full text-xl p-2 duration-300"
+                  >
+                    <IoMdLink />
+                  </Link>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>

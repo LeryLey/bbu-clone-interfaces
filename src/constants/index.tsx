@@ -478,3 +478,92 @@ export const educations: EducationType[] = [
     title: "Doctoral Degree",
   },
 ];
+// footer Links
+interface FooterLinkType {
+  title: string;
+  path: string;
+}
+// The University Governance and Management
+
+export const gam: FooterLinkType[] = [
+  {
+    title: "Chairman",
+    path: "/chairman",
+  },
+  {
+    title: "President",
+    path: "/president",
+  },
+  {
+    title: "Governance Structure",
+    path: "/governance-structure",
+  },
+  {
+    title: "University's Adviser",
+    path: "/university-adviser",
+  },
+  {
+    title: "Vice president",
+    path: "/vice-president",
+  },
+];
+
+// downloads
+export const downloads: FooterLinkType[] = [
+  {
+    title: "Application Forms",
+    path: "/application-forms",
+  },
+  {
+    title: "BBU Logo",
+    path: "/bbu-logo",
+  },
+  {
+    title: "Orientation Day",
+    path: "/orientation-day",
+  },
+  {
+    title: "Guideline Project Paper",
+    path: "/guideline-project-paper",
+  },
+  {
+    title: "International Journal of Business and Development Research (IJBDR)",
+    path: "/ijbdr",
+  },
+];
+
+// our campuses
+export const campuses: FooterLinkType[] = [
+  {
+    title: "Siem Reap",
+    path: "/siem-reap-campuses",
+  },
+  {
+    title: "Battambang",
+    path: "/battambang-campuses",
+  },
+  {
+    title: "Banteay Meanchey",
+    path: "/banteay-meanchey-campuses",
+  },
+  {
+    title: "Preah Sihanouk",
+    path: "/preah-sihanouk-campuses",
+  },
+  {
+    title: "Ratanakiri",
+    path: "/ratanakiri-campuses",
+  },
+  {
+    title: "Takeo",
+    path: "/takeo-campuses",
+  },
+  {
+    title: "Stung Treng",
+    path: "/stung-treng-campuses",
+  },
+  {
+    title: "Tboung Khmum",
+    path: "/tboung-khmum-campuses",
+  },
+];
