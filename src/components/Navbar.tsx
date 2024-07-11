@@ -165,8 +165,8 @@ const Navbar = () => {
         <div
           className={
             !search
-              ? "fixed top-0 bg-black/85  w-full h-0 left-0 flex items-center justify-center overflow-hidden z-10 duration-500 ease-out"
-              : "fixed top-0 bg-black/85  w-full h-full left-0 flex items-center justify-center overflow-hidden z-10 duration-500 ease-out"
+              ? "fixed top-0 bg-black/85  w-full h-0 left-0 flex items-center justify-center overflow-hidden z-20 duration-500 ease-out"
+              : "fixed top-0 bg-black/85  w-full h-full left-0 flex items-center justify-center overflow-hidden z-20 duration-500 ease-out"
           }
         >
           <button
