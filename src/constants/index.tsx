@@ -16,6 +16,7 @@ import SlideFour from "/src/assets/slide-4.jpg";
 import SlideFive from "/src/assets/slide-5.jpg";
 // image
 import NewCourse from "/src/assets/course.jpg";
+import { BsFillMortarboardFill } from "react-icons/bs";
 
 interface LinkType {
   title: string;
@@ -40,14 +41,14 @@ export const headerLinks: LinkType[] = [
   },
 ];
 // dropdown links
-interface DropdownLink {
+interface DropdownType {
   title: string;
   path: string;
   icon: any;
   img: any;
 }
 // campuses
-export const campusesDropdown: DropdownLink[] = [
+export const campusesDropdown: DropdownType[] = [
   {
     title: "Phnom Penh Campus:",
     path: "/phon-penh",
@@ -104,7 +105,7 @@ export const campusesDropdown: DropdownLink[] = [
   },
 ];
 // about bbu
-export const about: DropdownLink[] = [
+export const about: DropdownType[] = [
   {
     title: "Background",
     path: "/background",
@@ -453,5 +454,27 @@ export const events: EventType[] = [
     description: "សាកលវិទ្យាល័យបៀលប្រាយ ជាគ្រឹះស្ថានដ៏ធំជាងគេ ក្នុង...",
     path: "/new-course",
   },
-  
+];
+// education
+interface EducationType {
+  icon: any;
+  title: string;
+}
+export const educations: EducationType[] = [
+  {
+    icon: <BsFillMortarboardFill />,
+    title: "Associate Degree",
+  },
+  {
+    icon: <BsFillMortarboardFill />,
+    title: "Bachelor's Degree",
+  },
+  {
+    icon: <BsFillMortarboardFill />,
+    title: "Master's Degree",
+  },
+  {
+    icon: <BsFillMortarboardFill />,
+    title: "Doctoral Degree",
+  },
 ];
